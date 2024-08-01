@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Set the background color of the entire page to black */
+  color: #fff; /* Set text color to white for contrast */
+}
+
+.services-page {
+  padding: 20px;
+  background-color: #000; /* Set the background color of the services page to black */
+  color: #000000; /* Set text color to white for contrast */
+  text-align: center; /* Center align text */
+  min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+  position: relative; /* Ensure the container is relative for positioning child elements */
+}
+
+.heading {
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.open-modal-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-modal-button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed; /* Fixed positioning to cover the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255); /* Semi-transparent black background for the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white; /* Solid white background for modal content */
+  color: black;
+  padding: 20px;
+  border-radius: 16px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 1000px; /* Ensure the modal does not exceed a max-width */
+  display: flex; /* Flexbox layout for columns */
+  flex-direction: row; /* Ensure the modal content is divided into columns */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow for better visibility */
+}
+
+.drag-drop-area {
+  border: 2px dashed #007bff; /* Dashed border to indicate drag and drop area */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-right: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.browse-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.browse-button:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  display: none;
+}
+
+.uploaded-files {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.uploaded-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.uploaded-file-name {
+  font-size: 16px;
+}
+
+.uploaded-file-delete {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.close-modal-button,
+.upload-file-button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-file-button {
+  background-color: #007bff;
+}
+
+.close-modal-button:hover,
+.upload-file-button:hover {
+  opacity: 0.8;
+}
+.selected-file-info {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+.selected-file-info p {
+  margin: 5px 0;
+}
